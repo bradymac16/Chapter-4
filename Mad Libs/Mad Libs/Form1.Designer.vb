@@ -36,6 +36,9 @@ Partial Class Form1
         Me.listAnmial = New System.Windows.Forms.ListBox()
         Me.listPluralNoun = New System.Windows.Forms.ListBox()
         Me.listNoun = New System.Windows.Forms.ListBox()
+        Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'listColor
@@ -140,6 +143,7 @@ Partial Class Form1
         'listAnmial
         '
         Me.listAnmial.FormattingEnabled = True
+        Me.listAnmial.Items.AddRange(New Object() {"Dog ", "Cat", "Fish", "Bird ", "Cow", "Bear", "Lion", "tiger", "snakes", "horse", "wolf", "pig", "leopard", "giraffe"})
         Me.listAnmial.Location = New System.Drawing.Point(205, 190)
         Me.listAnmial.Name = "listAnmial"
         Me.listAnmial.Size = New System.Drawing.Size(120, 95)
@@ -148,6 +152,7 @@ Partial Class Form1
         'listPluralNoun
         '
         Me.listPluralNoun.FormattingEnabled = True
+        Me.listPluralNoun.Items.AddRange(New Object() {"Socks", "babies", "cars", "walls", "heroes", "trucks"})
         Me.listPluralNoun.Location = New System.Drawing.Point(29, 312)
         Me.listPluralNoun.Name = "listPluralNoun"
         Me.listPluralNoun.Size = New System.Drawing.Size(120, 95)
@@ -156,16 +161,47 @@ Partial Class Form1
         'listNoun
         '
         Me.listNoun.FormattingEnabled = True
+        Me.listNoun.Items.AddRange(New Object() {"house ", "car ", "book", "ship", "building", "farm"})
         Me.listNoun.Location = New System.Drawing.Point(366, 190)
         Me.listNoun.Name = "listNoun"
         Me.listNoun.Size = New System.Drawing.Size(120, 95)
         Me.listNoun.TabIndex = 13
+        '
+        'btnSubmit
+        '
+        Me.btnSubmit.Location = New System.Drawing.Point(193, 312)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 49)
+        Me.btnSubmit.TabIndex = 14
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(305, 312)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 49)
+        Me.btnClear.TabIndex = 15
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(411, 312)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 49)
+        Me.btnExit.TabIndex = 16
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(555, 419)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.listNoun)
         Me.Controls.Add(Me.listPluralNoun)
         Me.Controls.Add(Me.listAnmial)
@@ -200,5 +236,8 @@ Partial Class Form1
     Friend WithEvents listAnmial As System.Windows.Forms.ListBox
     Friend WithEvents listPluralNoun As System.Windows.Forms.ListBox
     Friend WithEvents listNoun As System.Windows.Forms.ListBox
+    Friend WithEvents btnSubmit As System.Windows.Forms.Button
+    Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
