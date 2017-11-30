@@ -23,8 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtPasscode = New System.Windows.Forms.TextBox()
+        Me.btnEnter = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -36,29 +38,49 @@ Partial Class Form1
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Enter Your Password"
         '
-        'txtPass
+        'txtPasscode
         '
-        Me.txtPass.Location = New System.Drawing.Point(87, 118)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(100, 20)
-        Me.txtPass.TabIndex = 1
+        Me.txtPasscode.Location = New System.Drawing.Point(87, 118)
+        Me.txtPasscode.Name = "txtPasscode"
+        Me.txtPasscode.Size = New System.Drawing.Size(100, 20)
+        Me.txtPasscode.TabIndex = 1
         '
-        'Button1
+        'btnEnter
         '
-        Me.Button1.Location = New System.Drawing.Point(98, 201)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEnter.Location = New System.Drawing.Point(12, 202)
+        Me.btnEnter.Name = "btnEnter"
+        Me.btnEnter.Size = New System.Drawing.Size(75, 23)
+        Me.btnEnter.TabIndex = 2
+        Me.btnEnter.Text = "Enter"
+        Me.btnEnter.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(102, 202)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 3
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(197, 202)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 4
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.txtPass)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnEnter)
+        Me.Controls.Add(Me.txtPasscode)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -67,7 +89,9 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtPass As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtPasscode As System.Windows.Forms.TextBox
+    Friend WithEvents btnEnter As System.Windows.Forms.Button
+    Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
